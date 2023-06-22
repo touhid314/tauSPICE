@@ -34,7 +34,42 @@ Netlist input:
     ".TRA 0 1.5 .01"]
 </code>
 
-Transient solution of the tauSPICE:  
+Transient solution of tauSPICE:  
 
 <img src="img/8.10/solution 8.10.png"/>
 
+<b>Circuit diagram:</b>
+<img src="img/10.1/sadiku exa10.1 ckt.png"/>  
+
+Netlist:  
+<code>
+["Vac 1 0 SIN 20 0.6366 0";
+    "R1 1 2 10";
+    "C1 4 0 0.1";
+    "Vd 2 4 DC 0";
+    "L1 2 3 1";
+    "F1 0 3 Vd 2";
+    "L1 0 3 0.5";
+    ".SSA"];
+</code>
+
+Steady state complex solution matrix from tauSPICE:  
+ <code>
+20.000000000000000 + 0.000000000000000i
+ 17.998993607320070 + 6.001341622508473i
+-13.198069422787535 - 4.400586226749846i
+ 17.998993607320070 + 6.001341622508473i
+ -0.200100639267993 + 0.600134162250847i
+ -2.400462092266265 + 7.199373835221737i
+</code>
+
+Index of nodes:
+<code>
+{[  1]}
+    {[  2]}
+    {[  3]}
+    {[  4]}
+    {[1 0]}
+    {[2 4]}
+</code> 
+So, firt 4 entries of the solution matrix are the corresponding node voltages. Last two entries are current from node 1 to 0 and from node 2 to 4.  

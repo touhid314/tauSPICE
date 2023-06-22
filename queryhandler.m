@@ -6,12 +6,16 @@ clear;
 
 %sadiku ex 8.10 page 341
 %sadiku ex 8.10 page 341
-nl = ["V1 1 0 DC 7";
-    "R1 1 2 3";
-    "L1 2 3 0.5";
-    "R2 3 0 1";
-    "L2 3 0 0.20";
-    ".TRA 0 1.5 .01"];
+% sadiku ex 10.1 PAGE 414
+nl = ["Vac 1 0 SIN 20 0.6366 0";
+    "R1 1 2 10";
+    "C1 4 0 0.1";
+    "Vd 2 4 DC 0";
+    "L1 2 3 1";
+    "F1 0 3 Vd 2";
+    "L1 0 3 0.5";
+    ".SSA"];
+
 
 %% parse input netlist to make a cell array of element objects
 [elements, queries] = nlparser(nl);
@@ -32,4 +36,5 @@ end
 [sol, vars_index] = solver(elements, analy);
 
 disp(sol);
+disp(vars_index);
 
