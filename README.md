@@ -38,10 +38,10 @@ Transient solution of tauSPICE:
 
 <img src="img/8.10/solution 8.10.png"/>
 
-<b>Circuit diagram:</b>
+<b>Circuit diagram:</b>   
 <img src="img/10.1/sadiku exa10.1 ckt.png"/>  
 
-Netlist:  
+Netlist:    
 <code>
 ["Vac 1 0 SIN 20 0.6366 0";
     "R1 1 2 10";
@@ -53,7 +53,7 @@ Netlist:
     ".SSA"];
 </code>
 
-Steady state complex solution matrix from tauSPICE:  
+Steady state complex solution matrix from tauSPICE:    
  <code>20.000000000000000 + 0.000000000000000i
  17.998993607320070 + 6.001341622508473i
 -13.198069422787535 - 4.400586226749846i
@@ -62,7 +62,7 @@ Steady state complex solution matrix from tauSPICE:
  -2.400462092266265 + 7.199373835221737i
 </code>
 
-Index of nodes:
+Index of nodes:  
 <code>{[  1]}
     {[  2]}
     {[  3]}
@@ -70,7 +70,7 @@ Index of nodes:
     {[1 0]}
     {[2 4]}
 </code> 
-So, firt 4 entries of the solution matrix are the corresponding node voltages. Last two entries are current from node 1 to 0 and from node 2 to 4.    
+So, first 4 entries of the solution matrix are the corresponding node voltages. Last two entries are current from node 1 to 0 and from node 2 to 4.    
 
 <b>Circuit diagram:</b>  
 <img src="img/3.2/ckt.png"/>  
@@ -98,3 +98,5 @@ Node Index:
     {[  3]}
     {[  4]}
     {[1 4]}</code>
+
+So first 4 entries of the solution matrix are the corresponding node voltages and the last entry is the current from node 1 to 4.  
