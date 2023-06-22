@@ -19,6 +19,14 @@ tauSPICE can perform both Steady state and tranient analysis. Currently the libr
 
 The library can be extended to have more elements by adding more elements in the lib folder.  
 
+# How to use
+Netlist is a column vector of string rows. Each row of the vector specifies a element of the circuit.
+Netlist syntax is mostly like SPICE netlist with some modifications. 
+Last row of netlist specifies the analysis type. `.SSA` for steady state analysis and `.TRA` for transient analysis.
+
+Specify the netlist vector on `query_handler.m` and run the script for solving the circuit.
+For plotting transient response, run `transient_response.m` after solving the circuit.   
+
 # Example Circuits
 Circuit:  
 <img src="/img/8.10/sadiku 4th ed example 8.10 page 341.png"/>
