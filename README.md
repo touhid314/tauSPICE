@@ -89,7 +89,8 @@ Netlist:
     "R2 1 3 4";
     "R3 2 0 4";
     "R4 2 3 8";
-    "F1 3 0 Vd 2"];
+    "F1 3 0 Vd 2";
+    ".SSA"];
 </code>
 
 Steady state solution:  

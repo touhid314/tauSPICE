@@ -3,6 +3,8 @@ clear;
 %% input netlist
 % netlist is an array of string arrays not char arrays
 
+% some elements transient property hasn't been added yet. might give
+% unexpected result.
 
 %sadiku ex 3.2
 nl = ["I1 0 1 DC 3";
