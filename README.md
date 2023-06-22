@@ -100,3 +100,6 @@ Node Index:
     {[1 4]}</code>
 
 So first 4 entries of the solution matrix are the corresponding node voltages and the last entry is the current from node 1 to 4.  
+
+
+<b>More example netlists are available on the `ex_netlist.m` file.</b>  
