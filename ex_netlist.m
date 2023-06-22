@@ -1,3 +1,5 @@
+% SOME EXAMPLE NETLISTS 
+
 % sadiku 5th ed
 
 %AC transient
