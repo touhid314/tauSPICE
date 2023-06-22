@@ -21,6 +21,7 @@ The library can be extended to have more elements by adding more elements in the
 
 # Example Circuits
 Circuit:
+
 <img src="/img/8.10/sadiku 4th ed example 8.10 page 341.png"/>
 
 Equation of Vo: <img src="img/8.10/txtbook solution 8.10.png"/> 
