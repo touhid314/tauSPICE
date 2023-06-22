@@ -69,12 +69,12 @@ Index of nodes:
     {[  4]}
     {[1 0]}
     {[2 4]}
-</code> 
+</code>  
 So, first 4 entries of the solution matrix are the corresponding node voltages. Last two entries are current from node 1 to 0 and from node 2 to 4.    
 
 <b>Circuit diagram:</b>  
 <img src="img/3.2/ckt.png"/>  
-Netlist:
+Netlist:  
 <code>["I1 0 1 DC 3";
     "Vd 1 4 DC 0";
     "R1 4 2 2";
@@ -84,7 +84,7 @@ Netlist:
     "F1 3 0 Vd 2"];
 </code>
 
-Steady state solution:
+Steady state solution:  
 <code>Solution Matrix: 
    4.800000000000000
    2.400000000000000
@@ -92,7 +92,7 @@ Steady state solution:
    4.800000000000000
    1.200000000000000
 
-Node Index: 
+Node Index:  
     {[  1]}
     {[  2]}
     {[  3]}
