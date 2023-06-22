@@ -25,7 +25,7 @@ Circuit:
 
 Equation of Vo: <img src="img/8.10/txtbook solution 8.10.png"/> 
 
-Netlist input:
+Netlist input:   
    ["V1 1 0 DC 7";  
     "R1 1 2 3";  
     "L1 2 3 0.5";  
