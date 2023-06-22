@@ -4,17 +4,16 @@ clear;
 % netlist is an array of string arrays not char arrays
 
 
-%sadiku ex 8.10 page 341
-%sadiku ex 8.10 page 341
-% sadiku ex 10.1 PAGE 414
-nl = ["Vac 1 0 SIN 20 0.6366 0";
-    "R1 1 2 10";
-    "C1 4 0 0.1";
-    "Vd 2 4 DC 0";
-    "L1 2 3 1";
-    "F1 0 3 Vd 2";
-    "L1 0 3 0.5";
+%sadiku ex 3.2
+nl = ["I1 0 1 DC 3";
+    "Vd 1 4 DC 0";
+    "R1 4 2 2";
+    "R2 1 3 4";
+    "R3 2 0 4";
+    "R4 2 3 8";
+    "F1 3 0 Vd 2";
     ".SSA"];
+
 
 
 %% parse input netlist to make a cell array of element objects
@@ -35,6 +34,8 @@ end
 
 [sol, vars_index] = solver(elements, analy);
 
+disp("Solution Matrix: ");
 disp(sol);
+disp("Node Index: ");
 disp(vars_index);
 

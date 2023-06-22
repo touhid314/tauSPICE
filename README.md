@@ -54,8 +54,7 @@ Netlist:
 </code>
 
 Steady state complex solution matrix from tauSPICE:  
- <code>
-20.000000000000000 + 0.000000000000000i
+ <code>20.000000000000000 + 0.000000000000000i
  17.998993607320070 + 6.001341622508473i
 -13.198069422787535 - 4.400586226749846i
  17.998993607320070 + 6.001341622508473i
@@ -64,12 +63,38 @@ Steady state complex solution matrix from tauSPICE:
 </code>
 
 Index of nodes:
-<code>
-{[  1]}
+<code>{[  1]}
     {[  2]}
     {[  3]}
     {[  4]}
     {[1 0]}
     {[2 4]}
 </code> 
-So, firt 4 entries of the solution matrix are the corresponding node voltages. Last two entries are current from node 1 to 0 and from node 2 to 4.  
+So, firt 4 entries of the solution matrix are the corresponding node voltages. Last two entries are current from node 1 to 0 and from node 2 to 4.    
+
+<b>Circuit diagram:</b>  
+<img src="img/3.2/ckt.png"/>  
+Netlist:
+<code>["I1 0 1 DC 3";
+    "Vd 1 4 DC 0";
+    "R1 4 2 2";
+    "R2 1 3 4";
+    "R3 2 0 4";
+    "R4 2 3 8";
+    "F1 3 0 Vd 2"];
+</code>
+
+Steady state solution:
+<code>Solution Matrix: 
+   4.800000000000000
+   2.400000000000000
+  -2.400000000000000
+   4.800000000000000
+   1.200000000000000
+
+Node Index: 
+    {[  1]}
+    {[  2]}
+    {[  3]}
+    {[  4]}
+    {[1 4]}</code>
