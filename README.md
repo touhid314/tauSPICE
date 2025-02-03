@@ -2,7 +2,7 @@
 A SPICE based circuit simulator made with Matlab.
 
 # Description
-tauSPICE can perform both Steady state and transient analysis. Currently, the library has the following components:
+tauSPICE can perform DC Steady state, DC transient analysis, and AC steady state analysis. Currently, the library has the following components:
 * Capacitor (C)
 * Current controlled current source (F)
 * Current controlled voltage source (H)
