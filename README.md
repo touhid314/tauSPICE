@@ -28,7 +28,7 @@ Specify the netlist vector on `query_handler.m` and run the script for solving t
 For plotting transient response, run `transient_response.m` after solving the circuit.   
 
 # Example Circuits
-* Circuit:  
+* DC Steady State Analysis:  
 <img src="/img/8.10/sadiku 4th ed example 8.10 page 341.png"/>
 
 Textbook soltuion of Vo: <img src="img/8.10/txtbook solution 8.10.png"/> 
@@ -46,7 +46,7 @@ Transient solution of tauSPICE:
 
 <img src="img/8.10/solution 8.10.png"/>
 
-<b>* Circuit diagram:</b>   
+<b>* AC Steady State Analysis</b>   
 <img src="img/10.1/sadiku exa10.1 ckt.png"/>  
 
 Netlist:    
@@ -80,7 +80,7 @@ Index of nodes:
 </code>  
 So, first 4 entries of the solution matrix are the corresponding node voltages. Last two entries are current from node 1 to 0 and from node 2 to 4.    
 
-<b>* Circuit diagram:</b>  
+<b>* DC Steady State Analysis:</b>  
 <img src="img/3.2/ckt.png"/>  
 Netlist:  
 <code>["I1 0 1 DC 3";
