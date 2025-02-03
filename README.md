@@ -28,7 +28,7 @@ Specify the netlist vector on `query_handler.m` and run the script for solving t
 For plotting transient response, run `transient_response.m` after solving the circuit.   
 
 # Example Circuits
-* DC Steady State Analysis:  
+* DC Transient Analysis:  
 <img src="/img/8.10/sadiku 4th ed example 8.10 page 341.png"/>
 
 Textbook soltuion of Vo: <img src="img/8.10/txtbook solution 8.10.png"/> 
